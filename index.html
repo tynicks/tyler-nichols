@@ -563,7 +563,29 @@ footer p{max-width:60ch}
 footer ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px}
 footer a{color:var(--ink)}
 
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv.pre{transform:none}}
+/* Cosmetic audit fixes (2026-10-20) */
+.rb-mark b{line-height:1.22}
+.ph .cap small,.shot .cap small{font-size:.75rem}
+.lbl{font-size:.7rem}
+.honor .flip{font-size:.72rem}
+@media (max-width:520px){
+  .hero-stats{gap:8px}
+  .hs{padding:12px 10px}
+  .hs span{font-size:12px;line-height:1.4;display:block}
+  .eyebrow,.jumpto>span{font-size:12px}
+  .badge-float span{font-size:12px}
+  .facts dt{font-size:12px}
+  .facts dd a{display:inline-flex;align-items:center;min-height:44px}
+  .q-dots{gap:0}
+  .q-dots button,.q-dots button[aria-current="true"]{width:24px;height:24px;background:none;display:grid;place-items:center}
+  .q-dots button[aria-current="true"]{width:30px}
+  .q-dots button::after{content:"";width:8px;height:8px;border-radius:999px;background:var(--line);transition:width .25s,background .25s}
+  .q-dots button[aria-current="true"]::after{width:22px;background:var(--orange)}
+  .lbl,.q-src,.quote cite,.dur,.pr .e,.honor .flip,.shot .cap small,.ph .cap small{font-size:12px}
+  input[type=range]{height:44px}
+  footer ul{gap:0}
+  footer ul a{display:inline-block;padding:10px 0}
+}@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv.pre{transform:none}}
 </style>
 </head>
 <body>
@@ -610,7 +632,7 @@ footer a{color:var(--ink)}
           <div class="hero-stats">
             <div class="hs"><b data-m="8.19">8.19m</b><span>Long jump PR</span></div>
             <div class="hs"><b data-m="2.18">2.18m</b><span>High jump PR</span></div>
-            <div class="hs"><b>2×</b><span>All-American, 2026</span></div>
+            <div class="hs"><b>2×</b><span>All&#8209;American, 2026</span></div>
           </div>
         </div>
         <div class="portrait">
